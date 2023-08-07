@@ -6,7 +6,7 @@ app = connexion.App(__name__, specification_dir="./")
 # This tells the app instance read the swagger.yml file from the specification directory and configure the system to provide the Connexion functionality.
 app.add_api("swagger.yml")
 
-
+#This is the route for the homepage
 @app.route("/")
 def home():
    return render_template("home.html")
